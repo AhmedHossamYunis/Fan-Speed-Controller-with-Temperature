@@ -1,0 +1,63 @@
+/*
+ * Mini_Project_3.c
+ *
+ *  Created on: May 23, 2022
+ *      Author: ahmed
+ */
+
+#include "PWM.h"
+#include "MOTOR.h"
+#include "LCD.h"
+#include "ADC.h"
+#include "lm35_sensor.h"
+
+
+int main(void)
+{
+	uint8 readingTemp;
+
+	LCD_init();
+//	ADC_init();
+//	DcMotor_Init();
+
+	LCD_displayString("Temp =    C");
+//	LCD_displayStringRowColumn(0,0,"FAN IS");
+//	LCD_displayStringRowColumn(1,0,"TEMP =");
+
+
+	while(1)
+	{
+//		readingTemp = LM35_getTemperature();
+//		LCD_setCurser(1,10);
+//		LCD_intgerToString(readingTemp);
+//
+//		if(readingTemp < 30)
+//		{
+//			DcMotor_Rotate(MOTOR_STOP, 0);
+//			LCD_displayStringRowColumn(0,10,"OFF");
+//		}
+//		else if((readingTemp >=30 ) && (readingTemp < 60) )
+//		{
+//			DcMotor_Rotate(MOTOR_STOP, 25);
+//			LCD_displayStringRowColumn(0,10,"ON");
+//		}
+//		else if((readingTemp >=60 ) && (readingTemp < 90) )
+//		{
+//			DcMotor_Rotate(MOTOR_STOP, 50);
+//			LCD_displayStringRowColumn(0,10,"ON");
+//		}
+//		else if((readingTemp >=90 ) && (readingTemp < 120) )
+//		{
+//			DcMotor_Rotate(MOTOR_STOP, 75);
+//			LCD_displayStringRowColumn(0,10,"ON");
+//		}
+//		else if(readingTemp >= 120  )
+//		{
+//			DcMotor_Rotate(MOTOR_STOP, 100);
+//			LCD_displayStringRowColumn(0,10,"ON");
+//		}
+
+
+
+	}
+}
